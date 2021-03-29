@@ -1,0 +1,24 @@
+<div class="list-video-container">
+
+    <div *ngFor="let item of videoList" routerLink="/watch/{{ item.video_id }}"  class="single-item">
+
+        <img class="thumbnail" src="{{ item.thumbnail }}" alt="">
+
+        <div class="bottom-row">
+
+            <div class="account-pic"></div>
+
+            <div class="details">
+                <p>{{ item.title }}</p>
+                <p> User Name </p>
+                <div class="both">
+                    <span class="views">{{ item.views }}</span>
+                    <span class="date"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="single-video-container">
+
+    <div class="left-wrapper">
+        <youtube-player [width]="640" *ngIf="video_id" videoId="{{video_id}}"></youtube-player>
+
+        <div class="details">
+
+            <h3 class="video-title">{{ currentVideo.title }}</h3>
+
+            <div class="bottom-row">
+
+                <span class="left">
+                    <span class="views"> {{ currentVideo.views }} views </span>
+                    <span class="date"> {{ currentVideo.created_at }} </span>
+                </span>
+
+                <span class="right">
+                    <span> <mat-icon>thumb_up</mat-icon> {{ currentVideo.likes }} </span>
+                    <span> <mat-icon>thumb_down</mat-icon> {{ currentVideo.dislikes }} </span>
+                    <span> <mat-icon>share</mat-icon> SHARE </span>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

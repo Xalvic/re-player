@@ -1,0 +1,49 @@
+.list-video-container {
+    padding: 1rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f9f9f8;
+    @media only screen and (max-width: 520px) {
+        justify-content: center;
+    }
+    .single-item {
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 4.2);
+        @media only screen and (max-width: 1110px) {
+            width: calc(100% / 3.2);    
+        }
+        @media only screen and (max-width: 889px) {
+            width: calc(100% / 2.2);    
+        }
+        @media only screen and (max-width: 520px) {
+            width: calc(100% / 1.2);    
+        }
+        p {
+            margin: 0;
+        }
+        .thumbnail {
+            width: 100%;
+        }
+        .bottom-row {
+            width: 100%;
+            display: flex;
+            padding: 0.8rem 0 1rem 0;
+            justify-content: space-between;
+            .account-pic {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background-color: #dddddd;
+                margin-right: 0.6rem;
+            }
+            .details {
+                width: calc(100% - 4rem);
+            }
+        }
+    }
+}
