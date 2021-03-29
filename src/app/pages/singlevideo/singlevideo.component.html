@@ -26,4 +26,25 @@
 
     </div>
 
+    <div class="right-wrapper">
+
+        <div *ngFor="let item of videoList" routerLink="/watch/{{ item.video_id }}"  class="single-item">
+
+            <img class="thumbnail" src="{{ item.thumbnail }}" alt="">
+    
+            <div class="bottom-row">
+
+                    <p class="side-titles">{{ item.title }}</p>
+                    <p class="user-name"> User Name </p>
+                    <div class="both">
+                        <span class="views">{{ item.views }} views</span>
+                        <span class="date">  {{ item.created_at }} </span>
+                    </div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
 </div>

@@ -8,10 +8,12 @@ const routes: Routes = [
   {
     path: '',
     component: ListvideosComponent,
+    data: { animationState: 'One' }
   },
   {
     path: 'watch/:id',
     component: SinglevideoComponent,
+    data: { animationState: 'Two' }
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
