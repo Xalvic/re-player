@@ -2,18 +2,22 @@
 
     <div *ngFor="let item of videoList" routerLink="/watch/{{ item.video_id }}"  class="single-item">
 
-        <img class="thumbnail" src="{{ item.thumbnail }}" alt="">
+        <div class="image-contain">
+            <img class="thumbnail" src="{{ item.thumbnail }}" alt="">
+            <p class="play-time">{{ item.playback_time | date:'HH:mm'}}</p>
+        </div>
 
         <div class="bottom-row">
 
-            <div class="account-pic"></div>
+            <img src="{{ item.account_pic }}" class="account-pic" alt="">
 
             <div class="details">
-                <p>{{ item.title }}</p>
-                <p> User Name </p>
+                <p class="video-title">{{ item.title }}</p>
+                <p class="user-name"> {{ item.user_name }} </p>
                 <div class="both">
-                    <span class="views">{{ item.views }} views</span>
-                    <span class="date"> {{ item.created_at }} </span>
+                    <div class="views">{{ item.views | shortNumber }} views</div>
+                    <div class="seperator"></div>
+                    <div class="date"> {{ item.created_at }} </div>
                 </div>
             </div>
 
@@ -30,7 +34,7 @@
     </div>
 
     <div class="single">
-        <mat-icon>explore</mat-icon>
+        <mat-icon fontSet="material-icons-outlined">explore</mat-icon>
         <p>Explore</p>
     </div>
 
@@ -39,12 +43,12 @@
     </div>
 
     <div class="single">
-        <mat-icon>subscriptions</mat-icon>
+        <mat-icon fontSet="material-icons-outlined">subscriptions</mat-icon>
         <p>Subscriptions</p>
     </div>
 
     <div class="single">
-        <mat-icon>video_library</mat-icon>
+        <mat-icon fontSet="material-icons-outlined">video_library</mat-icon>
         <p>Library</p>
     </div>
 

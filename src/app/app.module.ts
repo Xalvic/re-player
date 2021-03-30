@@ -14,13 +14,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ShortNumberPipe } from './pipes/short-number.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListvideosComponent,
     SinglevideoComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShortNumberPipe
   ],
   imports: [
     BrowserModule,

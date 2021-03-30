@@ -6,6 +6,10 @@
     margin: 0 auto;
     @media only screen and (max-width: 1125px) {
         flex-direction: column;
+        padding: 0;
+    }
+    @media only screen and (max-width: 520px) {
+        width: 100%;    
     }
     .left-wrapper {
         width: 640px;
@@ -14,22 +18,63 @@
         }
         .video-title {
             font-weight: 400;
+            @media only screen and (max-width: 520px) {
+                margin: 0.8rem;
+            }
         }
-        .bottom-row {
+        .up-bottom-row {
             font-size: 0.875rem;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             color: #747474;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
             border-bottom: 1px solid #e0e0e0;
+            @media only screen and (max-width: 520px) {
+                flex-direction: column;
+                align-items: flex-start;
+                .left {
+                    margin-left: 0.9rem;
+                }
+                .right {
+                    align-self: center;
+                }
+            }
             mat-icon {
                 font-size: 1.5rem;
                 width: 1.5rem;
                 height: 1.5rem;
             }
+            .left {
+                display: flex;
+                align-items: center;
+                .seperator {
+                    border-radius: 50%;
+                    margin: 0 4px;
+                    width: 3px;
+                    height: 3px;
+                    background-color: #747474;
+                }
+            }
             .right {
                 display: flex;
+                font-weight: 500;
+                .video-buttons {
+                    box-shadow: none;
+                    background-color: #ffffff;
+                    color: #747474;
+                    mat-icon {
+                        font-size: 1.5rem !important;
+                        width: 1.5rem !important;
+                        height: 1.5rem !important;
+                    }
+                }
+                .liked {
+                    color: #065fd5;
+                }
+                .disliked {
+                    color: #065fd5;
+                }
                 span {
                     margin-left: 1rem;
                     display: flex;
@@ -50,17 +95,56 @@
         .single-item {
             padding: 0.3rem 0;
             display: flex;
+            @media only screen and (min-width: 521px) {
+                .thumbnail {
+                    height: 6rem;
+                }
+            }
+            @media only screen and (max-width: 520px) {
+                width: 100%;  
+                flex-direction: column;  
+                .thumbnail {
+                    //height: auto;
+                    width: 100%;
+                }
+            }
             p {
                 margin: 0;
             }
             .side-titles {
                 font-weight: 500;
             }
-            .thumbnail {
-                height: 6rem;
-            }
             .bottom-row {
                 padding: 0 0.5rem;
+                @media only screen and (max-width: 520px) {
+                    margin-top: 0.6rem;
+                    display: flex;
+                    .both {
+                        display: flex;
+                        align-items: center;
+                        .seperator {
+                            border-radius: 50%;
+                            margin: 0 4px;
+                            width: 3px;
+                            height: 3px;
+                            background-color: #747474;
+                        }
+                    }
+                }
+                .account-pic {
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    background-color: #dddddd;
+                    margin-right: 0.6rem;
+                    display: none;
+                    @media only screen and (max-width: 520px) {
+                        display: block;
+                    }
+                    @media only screen and (max-width: 480px) {
+                        margin-left: 0.6rem;   
+                    }
+                }
             }
             .user-name {
                 margin: 0.2rem 0;

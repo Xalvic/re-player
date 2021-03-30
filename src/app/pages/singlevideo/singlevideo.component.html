@@ -1,23 +1,38 @@
+<div id="video-tag" class="scroll-to"></div>
 <div class="single-video-container">
-
     <div class="left-wrapper">
-        <youtube-player [width]="640" *ngIf="video_id" videoId="{{video_id}}"></youtube-player>
+        <youtube-player
+        [width]="'100%'" 
+        [height]="theHeight" 
+        *ngIf="video_id" 
+        videoId="{{video_id}}"></youtube-player>
 
         <div class="details">
 
             <h3 class="video-title">{{ currentVideo.title }}</h3>
 
-            <div class="bottom-row">
+            <div class="up-bottom-row">
 
                 <span class="left">
-                    <span class="views"> {{ currentVideo.views }} views </span>
-                    <span class="date"> {{ currentVideo.created_at }} </span>
+                    <div class="views">{{ currentVideo.views | shortNumber }} views</div>
+                    <div class="seperator"></div>
+                    <div class="date"> {{ currentVideo.created_at }} </div>
                 </span>
 
                 <span class="right">
-                    <span> <mat-icon>thumb_up</mat-icon> {{ currentVideo.likes }} </span>
-                    <span> <mat-icon>thumb_down</mat-icon> {{ currentVideo.dislikes }} </span>
+
+                    <span [class.liked]="like == 'like'"> 
+                        <button class="video-buttons" (click)="clickLike()" [class.liked]="like == 'like'" mat-mini-fab color="primary">
+                            <mat-icon>thumb_up</mat-icon>
+                        </button> {{ currentVideo.likes | shortNumber }} 
+                    </span>
+                    <span [class.disliked]="like == 'dislike'"> 
+                        <button class="video-buttons" (click)="clickDislike()" [class.disliked]="like == 'dislike'" mat-mini-fab color="primary">
+                            <mat-icon>thumb_down</mat-icon>
+                        </button> {{ currentVideo.dislikes | shortNumber }} 
+                    </span>
                     <span> <mat-icon>share</mat-icon> SHARE </span>
+
                 </span>
 
             </div>
@@ -34,11 +49,16 @@
     
             <div class="bottom-row">
 
-                    <p class="side-titles">{{ item.title }}</p>
-                    <p class="user-name"> User Name </p>
-                    <div class="both">
-                        <span class="views">{{ item.views }} views</span>
-                        <span class="date">  {{ item.created_at }} </span>
+                    <img src="{{ item.account_pic }}" class="account-pic" alt="">
+
+                    <div class="details">
+                        <p class="side-titles">{{ item.title }}</p>
+                        <p class="user-name"> User Name </p>
+                        <div class="both">
+                            <div class="views">{{ item.views | shortNumber }} views</div>
+                            <div class="seperator"></div>
+                            <div class="date"> {{ item.created_at }} </div>
+                        </div>
                     </div>
     
             </div>
