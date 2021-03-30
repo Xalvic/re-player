@@ -11,7 +11,11 @@
         "views": "770126",
         "likes": "84000",
         "dislikes": "130",
-        "thumbnail": "https://i3.ytimg.com/vi/OyuL5biOQ94/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/OyuL5biOQ94/maxresdefault.jpg",
+        "tags": [
+            "music",
+            "accoustic"
+        ]
     },
     {
         "id": 2,
@@ -25,7 +29,11 @@
         "views": "2654824",
         "likes": "211000",
         "dislikes": "1900",
-        "thumbnail": "https://i3.ytimg.com/vi/j5v8D-alAKE/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/j5v8D-alAKE/maxresdefault.jpg",
+        "tags": [
+            "paradox",
+            "intelligence"
+        ]
     },
     {
         "id": 3,
@@ -39,7 +47,12 @@
         "views": "2241289",
         "likes": "152000",
         "dislikes": "1300",
-        "thumbnail": "https://i3.ytimg.com/vi/gMlf1ELvRzc/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/gMlf1ELvRzc/maxresdefault.jpg",
+        "tags": [
+            "paradox",
+            "intelligence",
+            "education"
+        ]
     },
     {
         "id": 4,
@@ -53,7 +66,14 @@
         "views": "3864354",
         "likes": "190000",
         "dislikes": "1300",
-        "thumbnail": "https://i3.ytimg.com/vi/UBVV8pch1dM/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/UBVV8pch1dM/maxresdefault.jpg",
+        "tags": [
+            "paradox",
+            "intelligence",
+            "education",
+            "science",
+            "brain"
+        ]
     },
     {
         "id": 5,
@@ -67,7 +87,12 @@
         "views": "7947139 ",
         "likes": "194000",
         "dislikes": "3500",
-        "thumbnail": "https://i3.ytimg.com/vi/fxbCHn6gE3U/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/fxbCHn6gE3U/maxresdefault.jpg",
+        "tags": [
+            "paradox",
+            "intelligence",
+            "education"
+        ]
     },
     {
         "id": 6,
@@ -81,7 +106,14 @@
         "views": "6056692",
         "likes": "391000",
         "dislikes": "8800",
-        "thumbnail": "https://i3.ytimg.com/vi/6mRbDEtDoyA/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/6mRbDEtDoyA/maxresdefault.jpg",
+        "tags": [
+            "paradox",
+            "intelligence",
+            "money",
+            "fame",
+            "wealth"
+        ]
     },
     {
         "id": 7,
@@ -95,7 +127,14 @@
         "views": "641214",
         "likes": "14000",
         "dislikes": "336",
-        "thumbnail": "https://i3.ytimg.com/vi/SPwMDJIcrN0/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/SPwMDJIcrN0/maxresdefault.jpg",
+        "tags": [
+            "car",
+            "engine",
+            "speed",
+            "game",
+            "simulator"
+        ]
     },
     {
         "id": 8,
@@ -109,7 +148,14 @@
         "views": "3025312",
         "likes": "49567",
         "dislikes": "1512",
-        "thumbnail": "https://i3.ytimg.com/vi/rgfyx17-z7k/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/rgfyx17-z7k/maxresdefault.jpg",
+        "tags": [
+            "car",
+            "engine",
+            "speed",
+            "game",
+            "simulator"
+        ]
     },
     {
         "id": 9,
@@ -123,7 +169,13 @@
         "views": "976364",
         "likes": "20376",
         "dislikes": "594",
-        "thumbnail": "https://i3.ytimg.com/vi/RhPbhYcqRiA/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/RhPbhYcqRiA/maxresdefault.jpg",
+        "tags": [
+            "movie",
+            "documentary",
+            "short",
+            "life"
+        ]
     },
     {
         "id": 10,
@@ -137,7 +189,13 @@
         "views": "1869717",
         "likes": "30234",
         "dislikes": "1463",
-        "thumbnail": "https://i3.ytimg.com/vi/wUBnMSJ57qA/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/wUBnMSJ57qA/maxresdefault.jpg",
+        "tags": [
+            "movie",
+            "documentary",
+            "short",
+            "life"
+        ]
     },
     {
         "id": 11,
@@ -151,7 +209,12 @@
         "views": "1942158",
         "likes": "56657",
         "dislikes": "1312",
-        "thumbnail": "https://i3.ytimg.com/vi/76yRObMIwa0/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/76yRObMIwa0/maxresdefault.jpg",
+        "tags": [
+            "car",
+            "engine",
+            "speed"
+        ]
     },
     {
         "id": 12,
@@ -165,7 +228,12 @@
         "views": "7808675",
         "likes": "56875",
         "dislikes": "3265",
-        "thumbnail": "https://i3.ytimg.com/vi/bBrUrgNf5y8/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/bBrUrgNf5y8/maxresdefault.jpg",
+        "tags": [
+            "car",
+            "engine",
+            "speed"
+        ]
     },
     {
         "id": 13,
@@ -179,7 +247,12 @@
         "views": "1309419",
         "likes": "36987",
         "dislikes": "3123",
-        "thumbnail": "https://i3.ytimg.com/vi/wke4O8JqoNo/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/wke4O8JqoNo/maxresdefault.jpg",
+        "tags": [
+            "car",
+            "engine",
+            "speed"
+        ]
     },
     {
         "id": 14,
@@ -193,7 +266,13 @@
         "views": "4444118",
         "likes": "208354",
         "dislikes": "5436",
-        "thumbnail": "https://i3.ytimg.com/vi/QMWlRWnAZH8/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/QMWlRWnAZH8/maxresdefault.jpg",
+        "tags": [
+            "mobile",
+            "tech",
+            "fails",
+            "modern"
+        ]
     },
     {
         "id": 15,
@@ -207,7 +286,12 @@
         "views": "8789145",
         "likes": "288536",
         "dislikes": "13241",
-        "thumbnail": "https://i3.ytimg.com/vi/cTwXOnTzz64/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/cTwXOnTzz64/maxresdefault.jpg",
+        "tags": [
+            "fails",
+            "funny",
+            "comedy"
+        ]
     },
     {
         "id": 16,
@@ -221,7 +305,13 @@
         "views": "2021873",
         "likes": "18009",
         "dislikes": "1000",
-        "thumbnail": "https://i3.ytimg.com/vi/F-K7bNxOPvA/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/F-K7bNxOPvA/maxresdefault.jpg",
+        "tags": [
+            "movie",
+            "documentary",
+            "short",
+            "life"
+        ]
     },
     {
         "id": 17,
@@ -235,7 +325,12 @@
         "views": "12855483",
         "likes": "425356",
         "dislikes": "6812",
-        "thumbnail": "https://i3.ytimg.com/vi/foT9rsHmS24/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/foT9rsHmS24/maxresdefault.jpg",
+        "tags": [
+            "short",
+            "funny",
+            "comedy"
+        ]
     },
     {
         "id": 18,
@@ -249,7 +344,12 @@
         "views": "58232347",
         "likes": "1163732",
         "dislikes": "19635",
-        "thumbnail": "https://i3.ytimg.com/vi/WbliHNs4q14/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/WbliHNs4q14/maxresdefault.jpg",
+        "tags": [
+            "joker",
+            "movie",
+            "documentary"
+        ]
     },
     {
         "id": 19,
@@ -263,7 +363,12 @@
         "views": "1121851",
         "likes": "44733",
         "dislikes": "524",
-        "thumbnail": "https://i3.ytimg.com/vi/pPXBwy3JgVo/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/pPXBwy3JgVo/maxresdefault.jpg",
+        "tags": [
+            "music",
+            "eminem",
+            "rap"
+        ]
     },
     {
         "id": 20,
@@ -277,6 +382,10 @@
         "views": "6918414",
         "likes": "365176",
         "dislikes": "2946",
-        "thumbnail": "https://i3.ytimg.com/vi/c7BVtGnlxT8/maxresdefault.jpg"
+        "thumbnail": "https://i3.ytimg.com/vi/c7BVtGnlxT8/maxresdefault.jpg",
+        "tags": [
+            "music",
+            "funny"
+        ]
     }
 ]

@@ -7,7 +7,7 @@
         *ngIf="video_id" 
         videoId="{{video_id}}"></youtube-player>
 
-        <div class="details">
+        <div class="details" *ngIf="currentVideo">
 
             <h3 class="video-title">{{ currentVideo.title }}</h3>
 

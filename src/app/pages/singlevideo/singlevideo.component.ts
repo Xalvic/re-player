@@ -11,6 +11,7 @@ import { ElementRef } from '@angular/core';
 export class SinglevideoComponent implements OnInit {
   screenHeight: number;
   screenWidth: any;
+  listLoader: boolean = false;
 
   theHeight = '360px';
 
@@ -31,6 +32,7 @@ export class SinglevideoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // this.listLoader = true;
     if(window.innerWidth <= 520) {
       this.theVideoHeight = window.innerHeight / 3;
       this.theHeight = `${this.theVideoHeight}px`;
@@ -42,7 +44,8 @@ export class SinglevideoComponent implements OnInit {
     this._list.listCards().subscribe(
       (data) => {
         this.currentVideo = data.find(itm => itm.video_id == this.video_id);
-        this.videoList = data.filter(x => x != this.currentVideo)
+        this.videoList = data.filter(x => x.tags.some(itm => this.currentVideo.tags.includes(itm)));
+        console.log(this.videoList); //arr1.some(item => arr2.includes(item))
       }
     )
   }
@@ -52,18 +55,14 @@ export class SinglevideoComponent implements OnInit {
   }
 
   clickLike() {
-    if(this.like == null || this.like == 'dislike') {
+    if(this.like == null || this.like == 'dislike')
       this.like = 'like';
-    } else {
-      this.like = null;
-    }
+        else this.like = null;
   }
   clickDislike() {
-    if(this.like == null || this.like == 'like') {
+    if(this.like == null || this.like == 'like')
       this.like = 'dislike';
-    } else {
-      this.like = null;
-    }
+        else this.like = null;
   }
 
   scrollTo() {
