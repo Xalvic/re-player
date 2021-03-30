@@ -5,39 +5,41 @@ import { trigger, transition, style, query, group, animate, animateChild } from 
 // Three => Two, 
 export const routeTransitionAnimations = trigger('triggerName', [
     transition('One => Two', [
-		style({ position: 'relative' }),
-		query(':enter, :leave', [
-			style({
-				position: 'absolute',
-				top: 0,
-				right: 0,
-				width: '100%'
-			})
-		]),
-		query(':enter', [style({ left: '100%', opacity: 0 })]),
-		query(':leave', animateChild()),
+		query(":enter, :leave", style({ position: "fixed", width: "100%" })),
 		group([
-			query(':leave', [animate('1s ease-out', style({ opacity: 0 }))]),
-			query(':enter', [animate('1s ease-out', style({ left: '0%', opacity: 1 }))])
-		]),
-		query(':enter', animateChild())
-	])
-	// transition('Two => One', [
-	// 	style({ position: 'relative' }),
-	// 	query(':enter, :leave', [
-	// 		style({
-	// 			position: 'absolute',
-	// 			top: 0,
-	// 			left: 0,
-	// 			width: '100%'
-	// 		})
-	// 	]),
-	// 	query(':enter', [style({ top: '-100%', opacity: 0 })]),
-	// 	query(':leave', animateChild()),
-	// 	group([
-	// 		query(':leave', [animate('1s ease-out', style({ top: '100%', opacity: 0 }))]),
-	// 		query(':enter', [animate('1s ease-out', style({ top: '0%', opacity: 1 }))])
-	// 	]),
-	// 	query(':enter', animateChild())
-	// ]),
+		  query(":enter", [
+			style({ transform: "translateX(150%)" }),
+			animate(
+			  `1s ease-in-out`,
+			  style({ transform: "translateX(0)" })
+			)
+		  ]),
+		  query(":leave", [
+			style({ transform: "translateX(0%) opacity:", opacity: 1 }),
+			animate(
+			  `1s ease-in-out`,
+			  style({ transform: "translateX(-150%)", opacity: 0 })
+			)
+		  ])
+		])
+	]),
+	transition('Two => One', [
+		query(":enter, :leave", style({ position: "fixed", width: "100%" })),
+		group([
+		  query(":enter", [
+			style({ transform: "translateX(-150%)" }),
+			animate(
+			  `1s ease-in-out`,
+			  style({ transform: "translateX(0)" })
+			)
+		  ]),
+		  query(":leave", [
+			style({ transform: "translateX(0%)", opacity: 1 }),
+			animate(
+			  `1s ease-in-out`,
+			  style({ transform: "translateX(150%)", opacity: 0 })
+			)
+		  ])
+		])
+	]),
 ]);

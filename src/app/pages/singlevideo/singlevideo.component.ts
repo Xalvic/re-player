@@ -50,9 +50,9 @@ export class SinglevideoComponent implements OnInit {
     )
   }
 
-  ngAfterViewInit() {
-    this.scrollTo();
-  }
+  // ngAfterViewInit() {
+  //   this.scrollTo();
+  // }
 
   clickLike() {
     if(this.like == null || this.like == 'dislike')
