@@ -4,6 +4,9 @@
     padding: 1rem 1.4rem;
     width: 88%;
     margin: 0 auto;
+    .share-box {
+        cursor: pointer;
+    }
     @media only screen and (max-width: 1125px) {
         flex-direction: column;
         padding: 0;

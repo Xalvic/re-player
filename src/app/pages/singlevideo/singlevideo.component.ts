@@ -50,9 +50,19 @@ export class SinglevideoComponent implements OnInit {
     )
   }
 
-  // ngAfterViewInit() {
-  //   this.scrollTo();
-  // }
+  share() {
+    let shares: any;
+      shares = window.navigator;
+      if (shares && shares.share) {
+        shares
+          .share({
+            title: this.currentVideo.title,
+            url: this.currentVideo.url,
+          })
+          .then(() => console.log('Share was successful.'))
+          .catch((error) => console.log('Sharing failed', error));
+      }
+  }
 
   clickLike() {
     if(this.like == null || this.like == 'dislike')
