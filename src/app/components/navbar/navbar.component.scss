@@ -2,7 +2,6 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
-
     //! Search Bar Start
     .search-bar {
         width: 55%;
@@ -73,4 +72,19 @@
       }
 
       // ! Search Bar End
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+      display: none;
+  }
+  .search-bar {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .search-bar {
+    width: 100% !important;
+  }
 }
